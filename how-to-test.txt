@@ -38,3 +38,31 @@ example.com.		604800	IN	A	10.211.55.14
 ;; MSG SIZE  rcvd: 84
 
 #
+
+
+
+
+# dig @localhost www.google.com
+
+; <<>> DiG 9.18.28-0ubuntu0.22.04.1-Ubuntu <<>> @localhost www.google.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34153
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: cdd298e119c8878f01000000672232b8e81f16924b23f4c0 (good)
+;; QUESTION SECTION:
+;www.google.com.			IN	A
+
+;; ANSWER SECTION:
+www.google.com.		176	IN	A	31.13.73.169
+
+;; Query time: 400 msec
+;; SERVER: 127.0.0.1#53(localhost) (UDP)
+;; WHEN: Wed Oct 30 13:20:56 UTC 2024
+;; MSG SIZE  rcvd: 87
+
+#
