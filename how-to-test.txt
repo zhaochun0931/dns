@@ -1,0 +1,33 @@
+dig @localhost www.example.com
+dig @localhost example.com
+
+
+
+
+
+
+
+# dig @localhost example.com
+
+; <<>> DiG 9.18.28-0ubuntu0.22.04.1-Ubuntu <<>> @localhost example.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32180
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: c4c6afcfcca2dc50010000006725a66259744a0ebb6d505d (good)
+;; QUESTION SECTION:
+;example.com.			IN	A
+
+;; ANSWER SECTION:
+example.com.		604800	IN	A	10.211.55.14
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.1#53(localhost) (UDP)
+;; WHEN: Sat Nov 02 04:11:14 UTC 2024
+;; MSG SIZE  rcvd: 84
+
+#
