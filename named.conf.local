@@ -13,7 +13,7 @@ zone "example.com" {
     file "/etc/bind/db.example.com";  // Zone file location
 };
 
-zone "1.168.192.in-addr.arpa" {
+zone "55.211.10.in-addr.arpa" {
     type master;
-    file "/etc/bind/db.192";  // Reverse zone file location
+    file "/etc/bind/db.10";  // Reverse zone file location
 };
